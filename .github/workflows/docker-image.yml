@@ -24,5 +24,6 @@ jobs:
 
     - name: Push the Docker image
       run: |
+        OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
         IMAGE_ID=ghcr.io/$OWNER/devvm:latest
         docker push $IMAGE_ID
