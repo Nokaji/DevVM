@@ -32,6 +32,7 @@ RUN apt-get update && \
         unzip \
         tar \
         wget \
+        nano \
         htop \
         pkg-config \
         linux-libc-dev \
