@@ -31,6 +31,8 @@ RUN apt-get update && \
         zip \
         unzip \
         tar \
+        wget \
+        htop \
         pkg-config \
         linux-libc-dev \
         libssl-dev \
