@@ -34,6 +34,8 @@ RUN apt-get update && \
         wget \
         nano \
         htop \
+        nodejs \
+        npm \
         pkg-config \
         linux-libc-dev \
         libssl-dev \
