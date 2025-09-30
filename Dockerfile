@@ -75,7 +75,7 @@ RUN vcpkg install \
 
 # Install Tools for any Language
 RUN curl -fsSL https://bun.sh/install | bash
-RUN curl -fsSL https://sh.rustup.rs | bash
+RUN curl -fsSL https://sh.rustup.rs | bash -s -- -y
 
 # Add bun to PATH
 ENV PATH="/root/.bun/bin:${PATH}"
