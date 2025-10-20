@@ -66,12 +66,12 @@ RUN vcpkg version
 
 # Install dependencies using vcpkg
 RUN vcpkg install \
+    grpc \
     nlohmann-json \
     fmt \
     yaml-cpp \
     curl[tool] \
-    spdlog \
-    --clean-after-build
+    spdlog
 
 # Install Tools for any Language
 RUN curl -fsSL https://bun.sh/install | bash
