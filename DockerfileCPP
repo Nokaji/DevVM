@@ -1,5 +1,6 @@
 # Use Ubuntu 24.04 as the base image
-FROM ghcr.io/$OWNER/devvm:latest
+ARG OWNER=nokaji
+FROM ghcr.io/${OWNER}/devvm:latest
 
 # Add Kitware repository for latest cmake
 RUN curl -fsSL https://apt.kitware.com/keys/kitware-archive-latest.asc | gpg --dearmor -o /usr/share/keyrings/kitware-archive-keyring.gpg && \
