@@ -43,6 +43,7 @@ RUN apt-get update && \
         libyaml-cpp-dev \
         libspdlog-dev \
         valgrind \
+	python3.12-venv\
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
