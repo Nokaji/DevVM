@@ -21,6 +21,16 @@ RUN apt-get update && \
         cmake \
         ninja-build \
         build-essential \
+        gdb \
+        clang \
+        lldb \
+        ccache \
+        autoconf \
+        automake \
+        libtool \
+        meson \
+        python3-pip \
+        python3-dev \
         git \
         doxygen \
         graphviz \
@@ -30,6 +40,7 @@ RUN apt-get update && \
         wget \
         nano \
         htop \
+        net-tools \
         nodejs \
         npm \
         pkg-config \
@@ -42,6 +53,11 @@ RUN apt-get update && \
         libfmt-dev \
         libyaml-cpp-dev \
         libspdlog-dev \
+        clang-format \
+        clang-tidy \
+        cppcheck \
+        strace \
+        ltrace \
         valgrind \
 	python3.12-venv\
     && apt-get clean \
