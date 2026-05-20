@@ -27,6 +27,7 @@ RUN vcpkg install \
     fmt \
     yaml-cpp \
     curl[tool] \
-    spdlog
+    spdlog \
+    raylib-cpp
 
 WORKDIR /workspace
